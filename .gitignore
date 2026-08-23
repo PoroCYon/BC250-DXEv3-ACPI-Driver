@@ -1,0 +1,4 @@
+.cache/
+Build/
+BC250DXEv3ACPIAutoInjectPkg/Build/
+BC250DXEv3ACPIAutoInjectPkg/AcpiTables/Generated/

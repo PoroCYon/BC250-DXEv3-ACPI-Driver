@@ -1,0 +1,34 @@
+[Defines]
+  INF_VERSION                    = 0x0001001A
+  BASE_NAME                      = MeiMeiDXEv3_ACPI_AutoInject
+  FILE_GUID                      = a9981d14-6329-4698-ad20-173c4363dd30
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = BC250DXEv3ACPIAutoInjectEntryPoint
+
+[Sources]
+  BC250DXEv3ACPIAutoInjectDxe.c
+  AcpiTableBlobs.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  MemoryAllocationLib
+  PciSegmentLib
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint
+  UefiLib
+  UefiRuntimeServicesTableLib
+
+[Protocols]
+  gEfiAcpiTableProtocolGuid
+  gEfiLoadedImageProtocolGuid
+  gEfiVariableArchProtocolGuid
+  gEfiVariableWriteArchProtocolGuid
+
+[Depex]
+  gEfiVariableArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid AND gEfiAcpiTableProtocolGuid

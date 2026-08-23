@@ -1,0 +1,5 @@
+[Defines]
+  DEC_SPECIFICATION              = 0x0001001A
+  PACKAGE_NAME                   = MeiMeiDXEv3_ACPI_AutoInject
+  PACKAGE_GUID                   = 58f5d561-8802-4c83-b64e-a0f8fd0ced80
+  PACKAGE_VERSION                = 0.1
